@@ -6,10 +6,11 @@ Here are my important config files for:
 * Fish
 
 # How to use it
-1. `git clone` this repo
-2. Create a symlink poiting to the related file in the `.dotfiles` folder. 
+1. Create a `.dotfiles` folder in your `~/`
+2. `git clone` this repo to it.
+3. Create a symlink poiting to the related file in the `.dotfiles` folder.
 
-### Example of usage:
+### Example:
 ```bash
 # Configuring Neovim
 ln -s ~/.config/nvim/ ~/.dotfiles/nvim/
