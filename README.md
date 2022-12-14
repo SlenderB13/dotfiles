@@ -13,6 +13,6 @@ Here are my important config files for:
 ### Example:
 ```bash
 # Configuring Neovim
-ln -s ~/.config/nvim/ ~/.dotfiles/nvim/
+ln -s ~/.config/nvim/ ~/.dotfiles/
 # The neovim config folder is actually pointing to the dotfiles folder
 ```
