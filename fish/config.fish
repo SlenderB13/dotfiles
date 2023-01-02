@@ -7,6 +7,7 @@ alias g "git";
 alias gs "git status";
 alias ga "git add";
 alias gc "git commit -m";
+alias ide "tmux new-session \; split-window -v \; resize-pane -D 14\; select-pane -t 0\; split-window -h\; attach"
 
 function fish_greeting
     echo Now its (set_color yellow; date +%T; set_color normal) and lets keep pushing!
