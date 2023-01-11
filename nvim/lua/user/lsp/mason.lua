@@ -8,6 +8,7 @@ local servers = {
 	"jsonls",
 	"yamlls",
 	"tailwindcss",
+  "glslls",
 }
 
 local settings = {
