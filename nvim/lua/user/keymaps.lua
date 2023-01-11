@@ -44,11 +44,19 @@ keymap("v", "p", '"_dP', opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+-- Enters normal mode
+keymap("i", "<C>[", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+-- Enters normal mode
+keymap("v", "<C>[", "<ESC>", opts)
+
+-- Normal --
+-- Enters normal mode
+keymap("n", "<C>[", "<ESC>", opts)
 
 -- Plugins --
 
