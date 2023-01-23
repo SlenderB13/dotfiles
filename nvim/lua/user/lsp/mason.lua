@@ -9,6 +9,7 @@ local servers = {
 	"yamlls",
 	"tailwindcss",
   "glslls",
+  "astro",
 }
 
 local settings = {

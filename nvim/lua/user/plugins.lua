@@ -84,11 +84,15 @@ return packer.startup(function(use)
     "glepnir/lspsaga.nvim",
     branch = "main",
     config = function()
-        local saga = require("lspsaga")
+      require('lspsaga').setup({
+        ui = {
+          border = 'rounded',
+          colors = {
+            normal_bg = 'NONE'
+          }
+        }
 
-        saga.init_lsp_saga({
-            -- your configuration
-        })
+      })
     end,
 })
 
@@ -100,6 +104,9 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
   }
+
+  -- Treesitter for Astro
+  use { "virchau13/tree-sitter-astro" }
 
   -- Git
   use { "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" }
