@@ -3,6 +3,7 @@ alias .. "cd ..";
 alias vim "nvim";
 alias code "code .";
 alias p3 "python3.9";
+alias p10 "python3.10";
 alias g "git";
 alias gs "git status";
 alias ga "git add";
