@@ -22,7 +22,7 @@ telescope.setup {
       },
     },
     preview = {
-      hide_on_startup = true -- hide previewer on startup
+      hide_on_startup = false -- hide previewer on startup
     },
     layout_config = {
       vertical = {

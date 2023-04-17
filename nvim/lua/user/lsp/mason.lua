@@ -1,5 +1,4 @@
 local servers = {
-	"sumneko_lua",
 	"cssls",
 	"html",
 	"tsserver",
@@ -8,7 +7,6 @@ local servers = {
 	"jsonls",
 	"yamlls",
 	"tailwindcss",
-  "glslls",
   "astro",
 }
 

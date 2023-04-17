@@ -1,3 +1,4 @@
+--[[
 local status_ok, bufferline = pcall(require, "bufferline")
 if not status_ok then
   return
@@ -101,3 +102,6 @@ bufferline.setup {
     },
   },
 }
+--]]
+
+require("bufferline").setup{}
