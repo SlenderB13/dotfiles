@@ -1,4 +1,5 @@
 local null_ls = require("null-ls")
+local prettier = require("prettier")
 
 local group = vim.api.nvim_create_augroup("lsp_format_on_save", { clear = false })
 local event = "BufWritePre" -- or "BufWritePost"
@@ -29,4 +30,22 @@ null_ls.setup({
       end, { buffer = bufnr, desc = "[lsp] format" })
     end
   end,
+})
+
+prettier.setup({
+  bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
+  filetypes = {
+    "css",
+    "graphql",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "less",
+    "markdown",
+    "scss",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+  },
 })
