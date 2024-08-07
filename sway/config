@@ -255,3 +255,6 @@ exec --no-startup-id sudo localectl set-x11-keymap br
 
 # Start BlackBox
 bindsym $mod+Return exec blackbox
+
+# Custom shift key
+exec --no-startup-id xcape -e "escape ~/.xcape_config"

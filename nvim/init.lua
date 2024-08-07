@@ -1,8 +1,8 @@
 local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
+vim.opt.tabstop = 3
+vim.opt.shiftwidth = 3
 vim.opt.expandtab = true
 vim.bo.softtabstop = 2
 vim.opt.colorcolumn = "120"
@@ -32,11 +32,12 @@ local plugins = {
 	{'jose-elias-alvarez/null-ls.nvim'},
 	{'lewis6991/gitsigns.nvim', lazy = true},
 	{'MunifTanjim/prettier.nvim'},
-  {'akinsho/bufferline.nvim', version = "*"},
+  --{'akinsho/bufferline.nvim', version = "*"},
   {'nvimdev/lspsaga.nvim'},
   {'nvim-tree/nvim-tree.lua'},
   {'folke/trouble.nvim'},
   {'tpope/vim-fugitive'},
+  -- {'Exafunction/codeium.vim', event = 'BufEnter'},
 	-- LSP Support
 	  {
 	    'VonHeikemen/lsp-zero.nvim',
@@ -64,7 +65,18 @@ require("lazy").setup(plugins, opts)
 
 
 -- Lualine
-require('lualine').setup()
+require('lualine').setup({
+  sections = {
+    lualine_a = {
+      {
+        'buffers',
+      }
+    }
+  },
+  options = {
+    theme = 'auto'
+  }
+})
 
 -- CMP
 require('lsp-config')
@@ -79,7 +91,7 @@ require("keymaps")
 require("gitsigns").setup()
 
 -- Bufferline
-require("bufferline").setup()
+--require("bufferline").setup()
 
 -- LSPsaga
 require("lspsaga").setup({
@@ -87,8 +99,14 @@ require("lspsaga").setup({
 })
 
 -- NvimTree
-require("nvim-tree").setup({
-})
+--require("nvim-tree").setup({
+--  view = {
+--    float = {
+--      enable = true,
+--      quit_on_focus_loss = true,
+--    }
+--  }
+--})
 
 -- Treesitter
 require("nvim-treesitter.configs").setup({

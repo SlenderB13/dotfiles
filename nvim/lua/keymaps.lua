@@ -1,5 +1,5 @@
 local builtin = require('telescope.builtin')
-local buffer = require('bufferline')
+--local buffer = require('bufferline')
 
 vim.g.mapleader = ' '
 
@@ -11,7 +11,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 -- Custom
 vim.keymap.set('i', 'jk', '<Esc>')
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>db', vim.cmd.Ex)
 
 -- Bufferline
 vim.keymap.set('n', '<S-l>', vim.cmd.bnext, {})
