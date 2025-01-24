@@ -1,0 +1,4 @@
+2025-01-24 12:34:11,097 __main__ INFO:184 Creating player manager
+2025-01-24 12:34:11,103 __main__ INFO:56 Initialize new player: chromium
+2025-01-24 12:34:11,104 __main__ INFO:52 Starting main loop
+2025-01-24 12:34:14,744 __main__ INFO:18 Received signal to stop, exiting
