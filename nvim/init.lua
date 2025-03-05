@@ -109,6 +109,7 @@ require('lazy').setup({
 	{
 		"arzg/vim-colors-xcode",
 	},
+	{ 'datsfilipe/min-theme.nvim' },
 	{ -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
